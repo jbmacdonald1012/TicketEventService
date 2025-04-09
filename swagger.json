@@ -82,10 +82,34 @@
         "description": "",
         "parameters": [
           {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "userId": {
+                  "example": "any"
+                },
+                "eventId": {
+                  "example": "any"
+                },
+                "numberOfTickets": {
+                  "example": "any"
+                },
+                "seatLocations": {
+                  "example": "any"
+                },
+                "eventDate": {
+                  "example": "any"
+                },
+                "totalPrice": {
+                  "example": "any"
+                },
+                "paymentStatus": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
         "responses": {
