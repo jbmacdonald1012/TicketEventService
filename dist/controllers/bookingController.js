@@ -20,8 +20,8 @@ const createBooking = async (req, res, next) => {
     const { userId, eventId, numberOfTickets, seatLocations, eventDate, totalPrice, paymentStatus } = req.body;
     const newBooking = {
         _id: null,
-        userId: new mongodb_1.ObjectId(userId),
-        eventId: new mongodb_1.ObjectId(eventId),
+        userId,
+        eventId,
         numberOfTickets,
         seatLocations,
         eventDate,
